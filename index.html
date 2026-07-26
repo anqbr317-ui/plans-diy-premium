@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plans de bricolage simples et premium à construire soi-même.">
+  <title>Plans Bricolage Premium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <a class="brand" href="#accueil">🛠️ Plans Bricolage Premium</a>
+      <button class="menu-button" aria-label="Ouvrir le menu">☰</button>
+      <div class="nav-links">
+        <a href="#plans">Plans</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#commande">Commander</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section id="accueil" class="hero-content container">
+      <div>
+        <span class="badge">Des idées à construire soi-même</span>
+        <h1>Transforme une idée en projet concret</h1>
+        <p>
+          Découvre des plans simples, pratiques et accessibles pour fabriquer
+          des cabanes, nichoirs, rangements, jardinières et bien plus encore.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#plans">Voir les plans</a>
+          <a class="btn btn-secondary" href="#commande">Commander un plan</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="tool-emoji">📐</div>
+        <h2>Plans clairs et accessibles</h2>
+        <p>Formats simples ou complets, selon ton besoin.</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="plans" class="section container">
+      <div class="section-heading">
+        <span class="eyebrow">Catalogue</span>
+        <h2>Nos catégories de plans</h2>
+        <p>Choisis une idée et adapte-la à ton espace.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-icon">🐦</div>
+          <h3>Nichoirs et cabanes</h3>
+          <p>Des modèles pour oiseaux, poules et petits animaux.</p>
+          <span class="price">À partir de 5 €</span>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🌿</div>
+          <h3>Jardin et extérieur</h3>
+          <p>Jardinières, hôtels à insectes et décorations de jardin.</p>
+          <span class="price">À partir de 5 €</span>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🧰</div>
+          <h3>Rangements</h3>
+          <p>Coffres, étagères et meubles simples à fabriquer.</p>
+          <span class="price">À partir de 5 €</span>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🏠</div>
+          <h3>Projets sur mesure</h3>
+          <p>Une idée personnelle transformée en plan illustré.</p>
+          <span class="price">Sur devis</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="tarifs" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Tarifs simples</span>
+          <h2>Choisis le niveau de détail</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <h3>Plan simple</h3>
+            <div class="big-price">5 €</div>
+            <ul>
+              <li>Vue générale du projet</li>
+              <li>Liste courte des matériaux</li>
+              <li>Conseils de fabrication</li>
+            </ul>
+            <a class="btn btn-primary" href="#commande">Choisir</a>
+          </article>
+
+          <article class="pricing-card featured">
+            <span class="popular">Le plus demandé</span>
+            <h3>Plan complet</h3>
+            <div class="big-price">10 €</div>
+            <ul>
+              <li>Plusieurs vues du projet</li>
+              <li>Dimensions principales</li>
+              <li>Liste des matériaux</li>
+              <li>Étapes de montage</li>
+            </ul>
+            <a class="btn btn-primary" href="#commande">Choisir</a>
+          </article>
+
+          <article class="pricing-card">
+            <h3>Projet personnalisé</h3>
+            <div class="big-price">Sur devis</div>
+            <ul>
+              <li>Création selon ton idée</li>
+              <li>Adaptation à ton espace</li>
+              <li>Échange avant réalisation</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Nous contacter</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="commande" class="section container">
+      <div class="order-box">
+        <div>
+          <span class="eyebrow">Commande</span>
+          <h2>Explique-nous ton idée</h2>
+          <p>
+            Indique le type de projet, les dimensions souhaitées et le niveau
+            de détail. Nous te répondrons avec une proposition.
+          </p>
+        </div>
+
+        <form id="orderForm">
+          <label>
+            Ton nom
+            <input type="text" id="name" required placeholder="Ton nom">
+          </label>
+
+          <label>
+            Ton adresse e-mail
+            <input type="email" id="email" required placeholder="exemple@email.com">
+          </label>
+
+          <label>
+            Type de plan
+            <select id="planType">
+              <option>Plan simple — 5 €</option>
+              <option>Plan complet — 10 €</option>
+              <option>Projet personnalisé</option>
+            </select>
+          </label>
+
+          <label>
+            Décris ton projet
+            <textarea id="message" rows="5" required placeholder="Exemple : une cabane pour poules avec un petit espace de repos..."></textarea>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Préparer mon message</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-dark">
+      <div class="container contact-box">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2>Une question avant de commander ?</h2>
+          <p>Remplace l’adresse e-mail ci-dessous par la tienne.</p>
+        </div>
+        <a class="btn btn-light" href="mailto:tonemail@example.com">tonemail@example.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 Plans Bricolage Premium</p>
+      <p>Plans créatifs pour projets personnels.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
