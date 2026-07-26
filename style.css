@@ -395,3 +395,36 @@ footer {
     flex-direction: column;
   }
 }
+.hero{
+    text-align:center;
+    background:#2f6f4e;
+    color:white;
+    padding:60px 20px;
+}
+
+.hero img{
+    width:90%;
+    max-width:900px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.hero h1{
+    font-size:48px;
+    margin-top:30px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 30px;
+    background:#ffb300;
+    color:#000;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
