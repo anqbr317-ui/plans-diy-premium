@@ -35,11 +35,9 @@ a {
 }
 
 .hero img{
-    width:60%;
-    max-width:500px;
+    width:40%;
+    max-width:350px;
     height:auto;
-    border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 .nav {
   min-height: 80px;
