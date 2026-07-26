@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plans de bricolage simples et détaillés à construire soi-même.">
+  <title>Plans Bricolage Premium | Plans PDF à construire soi-même</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero" id="accueil">
+    <nav class="nav container">
+      <a href="#accueil" class="brand">🛠️ Plans Bricolage Premium</a>
+      <button class="menu-button" aria-label="Ouvrir le menu">☰</button>
+      <div class="nav-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#plans">Plans</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#commande">Commander</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content container">
+      <div class="hero-text">
+        <span class="badge">Des idées à construire soi-même</span>
+        <h1>Construisez vos projets avec des plans simples et détaillés</h1>
+        <p>Nichoirs, cabanes, jardinières, rangements et créations personnalisées.</p>
+        <div class="hero-actions">
+          <a href="#plans" class="btn btn-primary">Découvrir les plans</a>
+          <a href="#commande" class="btn btn-secondary">Commander un plan</a>
+        </div>
+        <div class="hero-benefits">
+          <span>✓ Plans simples dès 5 €</span>
+          <span>✓ Plans complets dès 10 €</span>
+          <span>✓ Projets sur mesure</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-icon">📐</div>
+        <h2>Votre idée devient un plan</h2>
+        <p>Expliquez votre projet et choisissez le niveau de détail.</p>
+        <a href="#commande" class="mini-link">Décrire mon projet →</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="plans">
+      <div class="section-heading">
+        <span class="eyebrow">Catalogue</span>
+        <h2>Choisissez votre prochain projet</h2>
+        <p>Des créations utiles, décoratives et accessibles à fabriquer soi-même.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card"><div class="card-icon">🐦</div><h3>Nichoirs et cabanes</h3><p>Pour oiseaux, poules et petits animaux.</p><span class="price">À partir de 5 €</span></article>
+        <article class="card"><div class="card-icon">🌿</div><h3>Jardin et extérieur</h3><p>Jardinières, hôtels à insectes et décoration.</p><span class="price">À partir de 5 €</span></article>
+        <article class="card"><div class="card-icon">🧰</div><h3>Rangements</h3><p>Coffres, étagères et meubles pratiques.</p><span class="price">À partir de 5 €</span></article>
+        <article class="card"><div class="card-icon">🏠</div><h3>Projet personnalisé</h3><p>Une création imaginée selon vos besoins.</p><span class="price">Sur devis</span></article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="tarifs">
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow">Tarifs</span><h2>Un prix adapté à votre projet</h2></div>
+        <div class="pricing-grid">
+          <article class="pricing-card"><h3>Plan simple</h3><div class="big-price">5 €</div><ul><li>Vue générale</li><li>Liste courte des matériaux</li><li>Conseils de fabrication</li></ul><a href="#commande" class="btn btn-primary">Choisir</a></article>
+          <article class="pricing-card featured"><span class="popular">Le plus demandé</span><h3>Plan complet</h3><div class="big-price">10 €</div><ul><li>Plusieurs vues</li><li>Dimensions principales</li><li>Liste détaillée</li><li>Étapes de montage</li></ul><a href="#commande" class="btn btn-primary">Choisir</a></article>
+          <article class="pricing-card"><h3>Sur mesure</h3><div class="big-price">Sur devis</div><ul><li>Création selon votre idée</li><li>Adaptation aux dimensions</li><li>Échange avant réalisation</li></ul><a href="#contact" class="btn btn-primary">Nous contacter</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="commande">
+      <div class="order-box">
+        <div><span class="eyebrow">Commande</span><h2>Expliquez votre idée</h2><p>Indiquez le projet souhaité, ses dimensions et le niveau de détail.</p></div>
+        <form id="orderForm">
+          <label>Votre nom<input type="text" id="name" required></label>
+          <label>Votre adresse e-mail<input type="email" id="email" required></label>
+          <label>Type de plan<select id="planType"><option>Plan simple — 5 €</option><option>Plan complet — 10 €</option><option>Projet personnalisé</option></select></label>
+          <label>Décrivez votre projet<textarea id="message" rows="5" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Préparer mon message</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="contact">
+      <div class="container contact-box">
+        <div><span class="eyebrow">Contact</span><h2>Une question avant de commander ?</h2><p>Contactez-nous directement par e-mail.</p></div>
+        <a class="btn btn-light" href="mailto:anqbr317@gmail.com">anqbr317@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-content"><p>© 2026 Plans Bricolage Premium</p><p>Plans créatifs pour projets personnels.</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
