@@ -437,6 +437,14 @@ footer {
     color:white;
     padding:60px 20px;
 }
+
+.hero img{
+    width:90%;
+    max-width:900px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
 .hero h1{
     font-size:48px;
     margin-top:30px;
