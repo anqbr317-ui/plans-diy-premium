@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Boutique de plans de bricolage avec 58 modèles classés par catégorie.">
+  <title>Boutique | Plans Bricolage Premium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#accueil">🛠️ Plans Bricolage Premium</a>
+    <button class="menu-button" id="menuButton" aria-label="Ouvrir le menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#categories">Catégories</a>
+      <a href="#catalogue">Catalogue</a>
+      <a href="#contact">Contact</a>
+      <button class="cart-button" id="openCart">Panier <span id="cartCount">0</span></button>
+    </nav>
+  </div>
+</header>
+
+<section class="shop-hero" id="accueil">
+  <div class="container shop-hero-content">
+    <div>
+      <span class="badge">58 modèles disponibles</span>
+      <h1>Une vraie boutique de plans à construire soi-même</h1>
+      <p>Choisissez une catégorie, découvrez les différents modèles et ajoutez vos plans au panier.</p>
+      <a href="#categories" class="btn btn-primary">Voir les catégories</a>
+    </div>
+    <div class="hero-panel">
+      <strong>6 grandes catégories</strong>
+      <span>58 modèles différents</span>
+      <span>Plans dès 5 €</span>
+      <span>Commande préparée par e-mail</span>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="section container" id="categories">
+    <div class="section-heading">
+      <span class="eyebrow">Catégories</span>
+      <h2>Choisissez votre type de projet</h2>
+    </div>
+    <div class="categories-grid">
+      
+      <a class="category-box" href="#catalogue" data-go-filter="cabanes-oiseaux">
+        <span>🐦</span>
+        <h3>Cabanes à oiseaux</h3>
+        <p>10 modèles</p>
+      </a>
+    
+      <a class="category-box" href="#catalogue" data-go-filter="cabanes-poules">
+        <span>🐔</span>
+        <h3>Cabanes pour poules</h3>
+        <p>8 modèles</p>
+      </a>
+    
+      <a class="category-box" href="#catalogue" data-go-filter="nichoirs">
+        <span>🪺</span>
+        <h3>Nichoirs</h3>
+        <p>10 modèles</p>
+      </a>
+    
+      <a class="category-box" href="#catalogue" data-go-filter="hotels-insectes">
+        <span>🐞</span>
+        <h3>Hôtels à insectes</h3>
+        <p>10 modèles</p>
+      </a>
+    
+      <a class="category-box" href="#catalogue" data-go-filter="jardinieres">
+        <span>🌿</span>
+        <h3>Jardinières</h3>
+        <p>10 modèles</p>
+      </a>
+    
+      <a class="category-box" href="#catalogue" data-go-filter="coffres-rangement">
+        <span>🧰</span>
+        <h3>Coffres de rangement</h3>
+        <p>10 modèles</p>
+      </a>
+    
+    </div>
+  </section>
+
+  <section class="section section-alt" id="catalogue">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Catalogue complet</span>
+        <h2>Tous les modèles</h2>
+        <p>Cliquez sur une catégorie pour afficher uniquement les plans correspondants.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">Tous les plans</button><button class="filter" data-filter="cabanes-oiseaux">🐦 Cabanes à oiseaux</button><button class="filter" data-filter="cabanes-poules">🐔 Cabanes pour poules</button><button class="filter" data-filter="nichoirs">🪺 Nichoirs</button><button class="filter" data-filter="hotels-insectes">🐞 Hôtels à insectes</button><button class="filter" data-filter="jardinieres">🌿 Jardinières</button><button class="filter" data-filter="coffres-rangement">🧰 Coffres de rangement</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        
+        <article class="product-card" data-category="cabanes-oiseaux">
+          <div class="product-image">
+            <span class="product-icon">🐦</span>
+            <span class="model-number">Modèle 1</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes à oiseaux</span>
+            <h3>Cabane classique</h3>
+            <p>Modèle simple avec toit incliné.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes à oiseaux - Cabane classique"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-oiseaux">
+          <div class="product-image">
+            <span class="product-icon">🐦</span>
+            <span class="model-number">Modèle 2</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes à oiseaux</span>
+            <h3>Cabane chalet</h3>
+            <p>Style petit chalet décoratif.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes à oiseaux - Cabane chalet"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-oiseaux">
+          <div class="product-image">
+            <span class="product-icon">🐦</span>
+            <span class="model-number">Modèle 3</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes à oiseaux</span>
+            <h3>Cabane moderne</h3>
+            <p>Forme épurée pour jardin contemporain.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes à oiseaux - Cabane moderne"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-oiseaux">
+          <div class="product-image">
+            <span class="product-icon">🐦</span>
+            <span class="model-number">Modèle 4</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes à oiseaux</span>
+            <h3>Cabane rustique</h3>
+            <p>Aspect bois naturel et traditionnel.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes à oiseaux - Cabane rustique"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-oiseaux">
+          <div class="product-image">
+            <span class="product-icon">🐦</span>
+            <span class="model-number">Modèle 5</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes à oiseaux</span>
+            <h3>Cabane suspendue</h3>
+            <p>Version légère à suspendre.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes à oiseaux - Cabane suspendue"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-oiseaux">
+          <div class="product-image">
+            <span class="product-icon">🐦</span>
+            <span class="model-number">Modèle 6</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes à oiseaux</span>
+            <h3>Cabane double</h3>
+            <p>Deux espaces séparés dans une seule structure.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes à oiseaux - Cabane double"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-oiseaux">
+          <div class="product-image">
+            <span class="product-icon">🐦</span>
+            <span class="model-number">Modèle 7</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes à oiseaux</span>
+            <h3>Cabane sur pied</h3>
+            <p>Modèle installé sur un support stable.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes à oiseaux - Cabane sur pied"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-oiseaux">
+          <div class="product-image">
+            <span class="product-icon">🐦</span>
+            <span class="model-number">Modèle 8</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes à oiseaux</span>
+            <h3>Cabane avec balcon</h3>
+            <p>Petite plateforme décorative en façade.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes à oiseaux - Cabane avec balcon"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-oiseaux">
+          <div class="product-image">
+            <span class="product-icon">🐦</span>
+            <span class="model-number">Modèle 9</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes à oiseaux</span>
+            <h3>Cabane toit plat</h3>
+            <p>Construction simple avec toit horizontal.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes à oiseaux - Cabane toit plat"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-oiseaux">
+          <div class="product-image">
+            <span class="product-icon">🐦</span>
+            <span class="model-number">Modèle 10</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes à oiseaux</span>
+            <h3>Cabane mangeoire intégrée</h3>
+            <p>Cabane avec espace repas intégré.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes à oiseaux - Cabane mangeoire intégrée"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-poules">
+          <div class="product-image">
+            <span class="product-icon">🐔</span>
+            <span class="model-number">Modèle 1</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes pour poules</span>
+            <h3>Poulailler compact</h3>
+            <p>Petit modèle pour deux poules.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes pour poules - Poulailler compact"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-poules">
+          <div class="product-image">
+            <span class="product-icon">🐔</span>
+            <span class="model-number">Modèle 2</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes pour poules</span>
+            <h3>Poulailler familial</h3>
+            <p>Modèle plus grand pour plusieurs poules.</p>
+            <div class="product-footer">
+              <strong>15 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes pour poules - Poulailler familial"
+                data-price="15">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-poules">
+          <div class="product-image">
+            <span class="product-icon">🐔</span>
+            <span class="model-number">Modèle 3</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes pour poules</span>
+            <h3>Poulailler avec pondoir</h3>
+            <p>Avec espace dédié à la ponte.</p>
+            <div class="product-footer">
+              <strong>15 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes pour poules - Poulailler avec pondoir"
+                data-price="15">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-poules">
+          <div class="product-image">
+            <span class="product-icon">🐔</span>
+            <span class="model-number">Modèle 4</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes pour poules</span>
+            <h3>Poulailler surélevé</h3>
+            <p>Cabane protégée de l&#x27;humidité du sol.</p>
+            <div class="product-footer">
+              <strong>15 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes pour poules - Poulailler surélevé"
+                data-price="15">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-poules">
+          <div class="product-image">
+            <span class="product-icon">🐔</span>
+            <span class="model-number">Modèle 5</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes pour poules</span>
+            <h3>Poulailler avec enclos</h3>
+            <p>Cabane et espace extérieur sécurisé.</p>
+            <div class="product-footer">
+              <strong>20 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes pour poules - Poulailler avec enclos"
+                data-price="20">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-poules">
+          <div class="product-image">
+            <span class="product-icon">🐔</span>
+            <span class="model-number">Modèle 6</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes pour poules</span>
+            <h3>Poulailler mobile</h3>
+            <p>Modèle déplaçable dans le jardin.</p>
+            <div class="product-footer">
+              <strong>15 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes pour poules - Poulailler mobile"
+                data-price="15">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-poules">
+          <div class="product-image">
+            <span class="product-icon">🐔</span>
+            <span class="model-number">Modèle 7</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes pour poules</span>
+            <h3>Poulailler toit ouvrant</h3>
+            <p>Ouverture pratique pour le nettoyage.</p>
+            <div class="product-footer">
+              <strong>15 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes pour poules - Poulailler toit ouvrant"
+                data-price="15">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="cabanes-poules">
+          <div class="product-image">
+            <span class="product-icon">🐔</span>
+            <span class="model-number">Modèle 8</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Cabanes pour poules</span>
+            <h3>Poulailler style chalet</h3>
+            <p>Version esthétique et complète.</p>
+            <div class="product-footer">
+              <strong>20 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Cabanes pour poules - Poulailler style chalet"
+                data-price="20">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="nichoirs">
+          <div class="product-image">
+            <span class="product-icon">🪺</span>
+            <span class="model-number">Modèle 1</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Nichoirs</span>
+            <h3>Nichoir mésange</h3>
+            <p>Ouverture adaptée aux mésanges.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Nichoirs - Nichoir mésange"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="nichoirs">
+          <div class="product-image">
+            <span class="product-icon">🪺</span>
+            <span class="model-number">Modèle 2</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Nichoirs</span>
+            <h3>Nichoir rouge-gorge</h3>
+            <p>Entrée semi-ouverte.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Nichoirs - Nichoir rouge-gorge"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="nichoirs">
+          <div class="product-image">
+            <span class="product-icon">🪺</span>
+            <span class="model-number">Modèle 3</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Nichoirs</span>
+            <h3>Nichoir moineau</h3>
+            <p>Modèle simple pour petits oiseaux.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Nichoirs - Nichoir moineau"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="nichoirs">
+          <div class="product-image">
+            <span class="product-icon">🪺</span>
+            <span class="model-number">Modèle 4</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Nichoirs</span>
+            <h3>Nichoir triple</h3>
+            <p>Trois compartiments séparés.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Nichoirs - Nichoir triple"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="nichoirs">
+          <div class="product-image">
+            <span class="product-icon">🪺</span>
+            <span class="model-number">Modèle 5</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Nichoirs</span>
+            <h3>Nichoir mural</h3>
+            <p>Fixation facile contre un mur.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Nichoirs - Nichoir mural"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="nichoirs">
+          <div class="product-image">
+            <span class="product-icon">🪺</span>
+            <span class="model-number">Modèle 6</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Nichoirs</span>
+            <h3>Nichoir sur poteau</h3>
+            <p>Version installée sur support.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Nichoirs - Nichoir sur poteau"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="nichoirs">
+          <div class="product-image">
+            <span class="product-icon">🪺</span>
+            <span class="model-number">Modèle 7</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Nichoirs</span>
+            <h3>Nichoir décoratif</h3>
+            <p>Modèle pensé pour embellir le jardin.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Nichoirs - Nichoir décoratif"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="nichoirs">
+          <div class="product-image">
+            <span class="product-icon">🪺</span>
+            <span class="model-number">Modèle 8</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Nichoirs</span>
+            <h3>Nichoir balcon</h3>
+            <p>Format compact pour balcon ou terrasse.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Nichoirs - Nichoir balcon"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="nichoirs">
+          <div class="product-image">
+            <span class="product-icon">🪺</span>
+            <span class="model-number">Modèle 9</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Nichoirs</span>
+            <h3>Nichoir observation</h3>
+            <p>Avec ouverture latérale contrôlée.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Nichoirs - Nichoir observation"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="nichoirs">
+          <div class="product-image">
+            <span class="product-icon">🪺</span>
+            <span class="model-number">Modèle 10</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Nichoirs</span>
+            <h3>Nichoir anti-pluie</h3>
+            <p>Toit élargi pour meilleure protection.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Nichoirs - Nichoir anti-pluie"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="hotels-insectes">
+          <div class="product-image">
+            <span class="product-icon">🐞</span>
+            <span class="model-number">Modèle 1</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Hôtels à insectes</span>
+            <h3>Hôtel compact</h3>
+            <p>Petit modèle pour balcon ou terrasse.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Hôtels à insectes - Hôtel compact"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="hotels-insectes">
+          <div class="product-image">
+            <span class="product-icon">🐞</span>
+            <span class="model-number">Modèle 2</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Hôtels à insectes</span>
+            <h3>Hôtel familial</h3>
+            <p>Plusieurs zones pour différents insectes.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Hôtels à insectes - Hôtel familial"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="hotels-insectes">
+          <div class="product-image">
+            <span class="product-icon">🐞</span>
+            <span class="model-number">Modèle 3</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Hôtels à insectes</span>
+            <h3>Hôtel vertical</h3>
+            <p>Format haut et étroit.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Hôtels à insectes - Hôtel vertical"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="hotels-insectes">
+          <div class="product-image">
+            <span class="product-icon">🐞</span>
+            <span class="model-number">Modèle 4</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Hôtels à insectes</span>
+            <h3>Hôtel mural</h3>
+            <p>Fixation directe sur un mur.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Hôtels à insectes - Hôtel mural"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="hotels-insectes">
+          <div class="product-image">
+            <span class="product-icon">🐞</span>
+            <span class="model-number">Modèle 5</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Hôtels à insectes</span>
+            <h3>Hôtel palette</h3>
+            <p>Construction avec bois de récupération.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Hôtels à insectes - Hôtel palette"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="hotels-insectes">
+          <div class="product-image">
+            <span class="product-icon">🐞</span>
+            <span class="model-number">Modèle 6</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Hôtels à insectes</span>
+            <h3>Hôtel toit végétalisé</h3>
+            <p>Avec espace supérieur pour plantes.</p>
+            <div class="product-footer">
+              <strong>15 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Hôtels à insectes - Hôtel toit végétalisé"
+                data-price="15">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="hotels-insectes">
+          <div class="product-image">
+            <span class="product-icon">🐞</span>
+            <span class="model-number">Modèle 7</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Hôtels à insectes</span>
+            <h3>Hôtel rustique</h3>
+            <p>Aspect naturel et matériaux simples.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Hôtels à insectes - Hôtel rustique"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="hotels-insectes">
+          <div class="product-image">
+            <span class="product-icon">🐞</span>
+            <span class="model-number">Modèle 8</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Hôtels à insectes</span>
+            <h3>Hôtel mini</h3>
+            <p>Petit projet rapide à fabriquer.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Hôtels à insectes - Hôtel mini"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="hotels-insectes">
+          <div class="product-image">
+            <span class="product-icon">🐞</span>
+            <span class="model-number">Modèle 9</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Hôtels à insectes</span>
+            <h3>Hôtel pédagogique</h3>
+            <p>Compartiments visibles pour les enfants.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Hôtels à insectes - Hôtel pédagogique"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="hotels-insectes">
+          <div class="product-image">
+            <span class="product-icon">🐞</span>
+            <span class="model-number">Modèle 10</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Hôtels à insectes</span>
+            <h3>Hôtel grand jardin</h3>
+            <p>Version imposante pour grand extérieur.</p>
+            <div class="product-footer">
+              <strong>15 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Hôtels à insectes - Hôtel grand jardin"
+                data-price="15">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="jardinieres">
+          <div class="product-image">
+            <span class="product-icon">🌿</span>
+            <span class="model-number">Modèle 1</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Jardinières</span>
+            <h3>Jardinière palette</h3>
+            <p>Modèle économique en bois recyclé.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Jardinières - Jardinière palette"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="jardinieres">
+          <div class="product-image">
+            <span class="product-icon">🌿</span>
+            <span class="model-number">Modèle 2</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Jardinières</span>
+            <h3>Jardinière sur pieds</h3>
+            <p>Hauteur confortable pour jardiner.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Jardinières - Jardinière sur pieds"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="jardinieres">
+          <div class="product-image">
+            <span class="product-icon">🌿</span>
+            <span class="model-number">Modèle 3</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Jardinières</span>
+            <h3>Jardinière verticale</h3>
+            <p>Idéale pour petits espaces.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Jardinières - Jardinière verticale"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="jardinieres">
+          <div class="product-image">
+            <span class="product-icon">🌿</span>
+            <span class="model-number">Modèle 4</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Jardinières</span>
+            <h3>Jardinière balcon</h3>
+            <p>Format fin et compact.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Jardinières - Jardinière balcon"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="jardinieres">
+          <div class="product-image">
+            <span class="product-icon">🌿</span>
+            <span class="model-number">Modèle 5</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Jardinières</span>
+            <h3>Jardinière avec treillis</h3>
+            <p>Pour plantes grimpantes.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Jardinières - Jardinière avec treillis"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="jardinieres">
+          <div class="product-image">
+            <span class="product-icon">🌿</span>
+            <span class="model-number">Modèle 6</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Jardinières</span>
+            <h3>Jardinière d&#x27;angle</h3>
+            <p>Conçue pour utiliser un coin.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Jardinières - Jardinière d&#x27;angle"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="jardinieres">
+          <div class="product-image">
+            <span class="product-icon">🌿</span>
+            <span class="model-number">Modèle 7</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Jardinières</span>
+            <h3>Jardinière double niveau</h3>
+            <p>Deux niveaux de plantation.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Jardinières - Jardinière double niveau"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="jardinieres">
+          <div class="product-image">
+            <span class="product-icon">🌿</span>
+            <span class="model-number">Modèle 8</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Jardinières</span>
+            <h3>Jardinière carrée</h3>
+            <p>Format simple et moderne.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Jardinières - Jardinière carrée"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="jardinieres">
+          <div class="product-image">
+            <span class="product-icon">🌿</span>
+            <span class="model-number">Modèle 9</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Jardinières</span>
+            <h3>Jardinière banc</h3>
+            <p>Association d&#x27;une assise et de bacs.</p>
+            <div class="product-footer">
+              <strong>15 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Jardinières - Jardinière banc"
+                data-price="15">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="jardinieres">
+          <div class="product-image">
+            <span class="product-icon">🌿</span>
+            <span class="model-number">Modèle 10</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Jardinières</span>
+            <h3>Jardinière roulante</h3>
+            <p>Avec roulettes pour déplacement facile.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Jardinières - Jardinière roulante"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="coffres-rangement">
+          <div class="product-image">
+            <span class="product-icon">🧰</span>
+            <span class="model-number">Modèle 1</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Coffres de rangement</span>
+            <h3>Coffre compact</h3>
+            <p>Petit rangement polyvalent.</p>
+            <div class="product-footer">
+              <strong>5 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Coffres de rangement - Coffre compact"
+                data-price="5">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="coffres-rangement">
+          <div class="product-image">
+            <span class="product-icon">🧰</span>
+            <span class="model-number">Modèle 2</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Coffres de rangement</span>
+            <h3>Coffre de jardin</h3>
+            <p>Pour coussins, outils et accessoires.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Coffres de rangement - Coffre de jardin"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="coffres-rangement">
+          <div class="product-image">
+            <span class="product-icon">🧰</span>
+            <span class="model-number">Modèle 3</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Coffres de rangement</span>
+            <h3>Coffre banc</h3>
+            <p>Rangement avec assise intégrée.</p>
+            <div class="product-footer">
+              <strong>15 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Coffres de rangement - Coffre banc"
+                data-price="15">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="coffres-rangement">
+          <div class="product-image">
+            <span class="product-icon">🧰</span>
+            <span class="model-number">Modèle 4</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Coffres de rangement</span>
+            <h3>Coffre à jouets</h3>
+            <p>Modèle pratique pour chambre d&#x27;enfant.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Coffres de rangement - Coffre à jouets"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="coffres-rangement">
+          <div class="product-image">
+            <span class="product-icon">🧰</span>
+            <span class="model-number">Modèle 5</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Coffres de rangement</span>
+            <h3>Coffre rustique</h3>
+            <p>Style bois massif traditionnel.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Coffres de rangement - Coffre rustique"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="coffres-rangement">
+          <div class="product-image">
+            <span class="product-icon">🧰</span>
+            <span class="model-number">Modèle 6</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Coffres de rangement</span>
+            <h3>Coffre moderne</h3>
+            <p>Design simple et lignes épurées.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Coffres de rangement - Coffre moderne"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="coffres-rangement">
+          <div class="product-image">
+            <span class="product-icon">🧰</span>
+            <span class="model-number">Modèle 7</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Coffres de rangement</span>
+            <h3>Coffre sur roulettes</h3>
+            <p>Facile à déplacer.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Coffres de rangement - Coffre sur roulettes"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="coffres-rangement">
+          <div class="product-image">
+            <span class="product-icon">🧰</span>
+            <span class="model-number">Modèle 8</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Coffres de rangement</span>
+            <h3>Coffre extérieur étanche</h3>
+            <p>Protection renforcée contre l&#x27;humidité.</p>
+            <div class="product-footer">
+              <strong>15 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Coffres de rangement - Coffre extérieur étanche"
+                data-price="15">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="coffres-rangement">
+          <div class="product-image">
+            <span class="product-icon">🧰</span>
+            <span class="model-number">Modèle 9</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Coffres de rangement</span>
+            <h3>Coffre vertical</h3>
+            <p>Format haut pour petits espaces.</p>
+            <div class="product-footer">
+              <strong>10 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Coffres de rangement - Coffre vertical"
+                data-price="10">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-category="coffres-rangement">
+          <div class="product-image">
+            <span class="product-icon">🧰</span>
+            <span class="model-number">Modèle 10</span>
+          </div>
+          <div class="product-content">
+            <span class="product-category">Coffres de rangement</span>
+            <h3>Coffre atelier</h3>
+            <p>Rangement robuste pour outils.</p>
+            <div class="product-footer">
+              <strong>15 €</strong>
+              <button class="btn btn-small add-to-cart"
+                data-name="Coffres de rangement - Coffre atelier"
+                data-price="15">
+                Ajouter
+              </button>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="container contact-box">
+      <div>
+        <span class="eyebrow">Projet personnalisé</span>
+        <h2>Vous avez votre propre idée ?</h2>
+        <p>Demandez un plan créé spécialement selon vos dimensions et vos besoins.</p>
+      </div>
+      <a class="btn btn-light" href="mailto:anqbr317@gmail.com?subject=Demande%20de%20plan%20personnalisé">Demander un devis</a>
+    </div>
+  </section>
+</main>
+
+<aside class="cart-panel" id="cartPanel" aria-hidden="true">
+  <div class="cart-header">
+    <h2>Votre panier</h2>
+    <button id="closeCart" aria-label="Fermer">✕</button>
+  </div>
+  <div id="cartItems" class="cart-items"><p class="empty-cart">Votre panier est vide.</p></div>
+  <div class="cart-total"><span>Total</span><strong id="cartTotal">0 €</strong></div>
+  <button class="btn btn-primary cart-checkout" id="checkoutButton">Préparer la commande</button>
+  <button class="clear-cart" id="clearCart">Vider le panier</button>
+</aside>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<footer>
+  <div class="container footer-content">
+    <p>© 2026 Plans Bricolage Premium</p>
+    <a href="mailto:anqbr317@gmail.com">anqbr317@gmail.com</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
