@@ -25,5 +25,5 @@ orderForm.addEventListener('submit', (event) => {
   );
 
   formMessage.textContent = 'Ton application e-mail va s’ouvrir. Pense à remplacer l’adresse de contact dans le code.';
-  window.location.href = `mailto:tonemail@example.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:anqbr317@gmail.com?subject=${subject}&body=${body}`;
 });
